@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="shortcut icon" href="src/imag/mp3.ico" type="image/x-icon">
+    <title>Media Player</title>
+</head>
+<body>
+    <h2 class="titulo" >Media player</h2>
+    <div class="container">
+        <div class="conteainer-player-e-lista">
+            <div class="player">
+                <div class="container-quadrado">
+                    <div class="quadrado">
+                        <img class="quadrado" src="./src/imag/imagem  de musica.jpeg" alt="">
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
+                    <div class="container-botoes">
+                        <div>
+                            <img onclick="retroceder()" class="button"  src="./src/imag/botao-retroceder .png" alt="">
+                            <img onclick="pausar()" class="button" id="pausar" src="./src/imag/pausa.png" alt="">
+                            <img onclick="play()" class="button" id="play"src="./src/imag/botao-play.png" alt="">
+                            <img onclick="avancar()" class="button" src="./src/imag/botao-avancar.png" alt="">
+
+                        </div>
+                        <div class="container-input">
+                            <p id="time">00 : 00</p>
+                            <input id="duracao" value="0" type="range">
+                        </div>
+                        <audio src="./src/Musicas/01 - Heavydirtysoul.mp3" id="audio" type="audio/mp3"></audio>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="lista-de-musica">
+                <p class="lista-de-musicas">lista de musica</p>
+                <ol id="lista">
+                    
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./src/script/main.js"></script>
+</body>
+</html>

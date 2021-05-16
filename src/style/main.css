@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:dimgray;
+}
+.titulo{
+    text-align: center;
+    color: #eee;
+    margin: 10px;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    flex-direction: column;
+
+}
+
+.player{
+    background: #eee;;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 350px;
+    height: 450px;
+}
+.container-quadrado{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    flex-direction: column;
+
+}
+.quadrado{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 40px;
+}
+.container-botoes{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    border: solid;
+    width: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+
+}
+#pausar{
+    display:none;
+}
+.button:hover{
+    border: solid beige;
+}
+.lista-de-musicas{
+    margin-top: 8px;
+    text-align: center;
+}
+p{
+    margin-top: 1px;
+    text-align: center;
+}
+li:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+li{
+   list-style: none;
+}
+input{
+    width: 300px;
+    background: blueviolet;
+}
+ol{
+    margin: 16px;
+}
+
+.lista-de-musica {
+    color:black;
+    background:#eeef;
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    width: 350px;
+    height: 450px;
+}
+.lista-de-musica p {
+    text-align: center;
+}
+.conteainer-player-e-lista{
+    display: flex;
+}
+
+
+@media (max-width:500px){   
+    .titulo{
+        text-align: center;
+        color: #eee;
+        margin: 10px;
+    }
+
+    .conteainer-player-e-lista{
+        display: inline-block;
+        margin: auto;
+        margin-top: 170px;
+    }
+    .player{
+        background: #eee;;
+        margin: 10px;
+        border: 1px solid;
+        border-radius: 20px;
+        width: 250px;
+        height: 430px;
+    }
+    .container-botoes{
+        width: 100%;
+    }
+    input{
+        width: 200px;
+        background: blueviolet;
+    }
+    .lista-de-musica {
+        color:black;
+        background:#eeef;
+        margin: 10px;
+        border: 1px solid;
+        border-radius: 20px;
+        width: 250px;
+        height: 430px;
+    }
+    .lista-de-musicas{
+        margin-top: 30px;
+    }
+    .lista-de-musica p {
+        text-align: center;
+    }
+
+}
