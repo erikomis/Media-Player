@@ -3,7 +3,7 @@ const time = document.getElementById("time");
 const audio = document.getElementById("audio");
 
 let musicas = [
-  "../../src/Musicas/01 - Heavydirtysoul",
+  "../../src/Musicas/01 - Heavydirtysoul.mp3",
   "../../src/Musicas/02 - Stressed Out.mp3",
   "../../src/Musicas/03 - Ride.mp3",
   "../../src/Musicas/04 - Fairly Local.mp3",
@@ -53,18 +53,20 @@ function avancar() {
 }
 
 function retroceder() {
-  if (quantidadeDemusicas < 10) {
+  if (quantidadeDemusicas > 0 ) {
     quantidadeDemusicas -= 1;
     console.log(quantidadeDemusicas);
     audio.setAttribute("src", musicas[quantidadeDemusicas]);
     console.log(musicas[quantidadeDemusicas]);
     audio.play();
   } else {
+
     quantidadeDemusicas = 0;
     console.log(quantidadeDemusicas);
-    audio.setAttribute("src", musicas[0]);
+    audio.setAttribute("src", musicas[1]);
     console.log(musicas[quantidadeDemusicas]);
     audio.play();
+    
   }
 }
 
