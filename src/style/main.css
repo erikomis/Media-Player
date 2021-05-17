@@ -67,7 +67,7 @@ body{
 #pausar{
     display:none;
 }
-.button:hover{
+.button:active{
     border: solid beige;
 }
 .lista-de-musicas{
@@ -110,17 +110,18 @@ ol{
 }
 
 
-@media (max-width:500px){   
+
+@media (max-width:480px){   
     .titulo{
         text-align: center;
         color: #eee;
-        margin: 10px;
+        margin: 14px;
     }
 
     .conteainer-player-e-lista{
         display: inline-block;
         margin: auto;
-        margin-top: 170px;
+        margin-top: 225px;
     }
     .player{
         background: #eee;;
