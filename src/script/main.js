@@ -44,29 +44,37 @@ function avancar() {
     console.log(quantidadeDemusicas);
     audio.setAttribute("src", musicas[quantidadeDemusicas]);
     console.log(musicas[quantidadeDemusicas]);
+    fazAparecerBotaoDePause();
+    fazSumirBotaoDePlay()
     audio.play();
   } else {
     quantidadeDemusicas = 0;
     audio.setAttribute("src", musicas[1]);
+    fazAparecerBotaoDePause();
+    fazSumirBotaoDePlay();
     audio.play();
   }
 }
 
 function retroceder() {
-  if (quantidadeDemusicas > 0 ) {
+  if (quantidadeDemusicas > 0) {
     quantidadeDemusicas -= 1;
     console.log(quantidadeDemusicas);
     audio.setAttribute("src", musicas[quantidadeDemusicas]);
     console.log(musicas[quantidadeDemusicas]);
+    fazAparecerBotaoDePause();
+    fazSumirBotaoDePlay();
+    audio.play();
+
     audio.play();
   } else {
-
     quantidadeDemusicas = 0;
     console.log(quantidadeDemusicas);
     audio.setAttribute("src", musicas[1]);
     console.log(musicas[quantidadeDemusicas]);
+    fazAparecerBotaoDePause();
+    fazSumirBotaoDePlay();
     audio.play();
-    
   }
 }
 
