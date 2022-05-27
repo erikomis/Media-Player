@@ -3,20 +3,19 @@ const time = document.getElementById("time");
 const audio = document.getElementById("audio");
 
 let musicas = [
-  "../../src/Musicas/01 - Heavydirtysoul.mp3",
-  "../../src/Musicas/02 - Stressed Out.mp3",
-  "../../src/Musicas/03 - Ride.mp3",
-  "../../src/Musicas/04 - Fairly Local.mp3",
-  "../../src/Musicas/05 - Tear In My Heart.mp3",
-  "../../src/Musicas/06 - Lane Boy.mp3",
-  "../../src/Musicas/07 - The Judge.mp3",
-  "../../src/Musicas/08 - Doubt.mp3",
-  "../../src/Musicas/09 - Polarize.mp3",
-  "../../src/Musicas/10 - We Don't Believe What's On TV.mp3",
-  "../../src/Musicas/11 - Message Man.mp3",
+  "../../src/Musicas/01-Heavydirtysoul.mp3",
+  "../../src/Musicas/02-StressedOut.mp3",
+  "../../src/Musicas/03-Ride.mp3",
+  "../../src/Musicas/04-FairlyLocal.mp3",
+  "../../src/Musicas/05-TearInMyHeart.mp3",
+  "../../src/Musicas/06-LaneBoy.mp3",
+  "../../src/Musicas/07-TheJudge.mp3",
+  "../../src/Musicas/08-Doubt.mp3",
+  "../../src/Musicas/09-Polarize.mp3",
+  "../../src/Musicas/10-WeDon'tBelieveWhat'sOnTV.mp3",
+  "../../src/Musicas/11-MessageMan.mp3",
 ];
-const musicasFormatadas  =  musicas.map(musica => musica.join(' ',''))
-console.log(musicasFormatadas)
+
 let quantidadeDemusicas = 0;
 function criaLista() {
   let musicas = [
@@ -47,7 +46,7 @@ function avancar() {
     audio.setAttribute("src", musicas[quantidadeDemusicas]);
     console.log(musicas[quantidadeDemusicas]);
     fazAparecerBotaoDePause();
-    fazSumirBotaoDePlay()
+    fazSumirBotaoDePlay();
     audio.play();
   } else {
     quantidadeDemusicas = 0;
