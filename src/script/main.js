@@ -15,7 +15,8 @@ let musicas = [
   "../../src/Musicas/10 - We Don't Believe What's On TV.mp3",
   "../../src/Musicas/11 - Message Man.mp3",
 ];
-
+const musicasFormatadas  =  musicas.map(musica => musica.join(' ',''))
+console.log(musicasFormatadas)
 let quantidadeDemusicas = 0;
 function criaLista() {
   let musicas = [
@@ -31,6 +32,7 @@ function criaLista() {
     " We Don't Believe What's On TV",
     "Message Man",
   ];
+
   for (let i = 0; i < musicas.length; i++) {
     let lista = document.getElementById("lista").innerHTML;
     lista = lista + `<li>${i + 1}. ${musicas[i]}</li>`;
